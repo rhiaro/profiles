@@ -6,6 +6,21 @@
 
 **Twitter**: Attributes (fixed set), connections (subset), authored content, activities within the network (heavily curated).
 
+**Tumblr**: Content; original posts and reposts. Attributes: username, blog title, blog description. (Separate page for likes which is optionally public). No stats by default.
+
+* Pump.io
+* YouTube
+* CouchSurfing
+* Facebook
+* Quora
+* OkCupid
+* StackOverflow
+* LinkedIn
+* PeoplePerHour
+* Academia.edu
+* AirBnB
+* Friendica
+
 2. How are profiles updated?
 
 **FOAF**: not spec'd (likely hand editing or through a client).
@@ -13,6 +28,29 @@
 **Indieweb**: not spec'd (likely editing static HTML).
 
 **Twitter**: Web form / client UI.
+
+**Tumblr**: Web form, mixed in with blog appearance/settings.
+
+API:
+
+WAIT THESE ARE ALL GET. No POST for update o.O
+
+* `/user/info`: following, default_post_format, name, likes, blogs [name, url, title, primary (bool), followers, tweet (bool), facebook (bool), type (pub/priv)]
+* `/user/dashboard` (which is feed of what they see that they're subscribed to etc)
+* `/user/likes`, `/user/following`
+
+* Pump.io
+* YouTube
+* CouchSurfing
+* Facebook
+* Quora
+* OkCupid
+* StackOverflow
+* LinkedIn
+* PeoplePerHour
+* Academia.edu
+* AirBnB
+* Friendica
 
 3. How are people notified of profile updates?
 
@@ -22,6 +60,21 @@
 
 **Twitter**: None.
 
+**Tumblr**: None.
+
+* Pump.io
+* YouTube
+* CouchSurfing
+* Facebook
+* Quora
+* OkCupid
+* StackOverflow
+* LinkedIn
+* PeoplePerHour
+* Academia.edu
+* AirBnB
+* Friendica
+
 4. Access control?
 
 **FOAF**: not spec'd (WebID+TLS/WebAccessControl for protecting whole documents not individual attributes).
@@ -29,6 +82,27 @@
 **Indieweb**: not spec'd
 
 **Twitter**: All or nothing for content. A blocked user can still see some attributes (avatar, banner, name). Protected accounts show all profile data but not content or followers/ing
+
+**Tumblr**: "a primary blog is public facing", secondary blogs can be password protected. Per-blog basis.
+
+No automatic links between primary and secondary blogs, and no way to tell if a blog is primary or secondary, or who which user owns a secondary blog (even from API without trial and error).
+
+You can block users: they can't follow, send fan mails or asks, see your posts in their dashboard, like, reblog or reply to your posts, see you in search results.
+
+Can grant write access and transfer admin between users for secondary blogs.
+
+* Pump.io
+* YouTube
+* CouchSurfing
+* Facebook
+* Quora
+* OkCupid
+* StackOverflow
+* LinkedIn
+* PeoplePerHour
+* Academia.edu
+* AirBnB
+* Friendica
 
 5. Connections?
 
@@ -38,6 +112,21 @@
 
 **Twitter**: One directional; notifications sometimes sent to your followers when you follow someone, especially if others in your network also do; follows (some? all? curated how?) appear in your timeline; no notifications of unfollows; configurable notification when someone follows you.
 
+**Tumblr**: `Follow` a blog. (Not a user).
+
+* Pump.io
+* YouTube
+* CouchSurfing
+* Facebook
+* Quora
+* OkCupid
+* StackOverflow
+* LinkedIn
+* PeoplePerHour
+* Academia.edu
+* AirBnB
+* Friendica
+
 6. Portability?
 
 **FOAF**: Server agnostic, move data as you please, but you need to control your domain.
@@ -46,6 +135,21 @@
 
 **Twitter**: You can download an archive of content and snapshot of profile attributes (and date of snapshot) but no changes history.
 
+**Tumblr**: Third party tools only, references from some time ago, don't know if they still work.
+
+* Pump.io
+* YouTube
+* CouchSurfing
+* Facebook
+* Quora
+* OkCupid
+* StackOverflow
+* LinkedIn
+* PeoplePerHour
+* Academia.edu
+* AirBnB
+* Friendica
+
 7. Restrictions?
 
 **FOAF**: n/a
@@ -53,6 +157,23 @@
 **Indieweb**: n/a
 
 **Twitter**: ~"may not create multiple accounts with overlapping use cases"
+
+**Tumblr**: Needs valid email. Create 10 secondary blogs per day. No way to have two primary blogs on the same email address.
+
+Secondary blogs can't 'initiate social features' (follow, like, ask, fan mail etc).
+
+* Pump.io
+* YouTube
+* CouchSurfing
+* Facebook
+* Quora
+* OkCupid
+* StackOverflow
+* LinkedIn
+* PeoplePerHour
+* Academia.edu
+* AirBnB
+* Friendica
 
 8. Model?
 
@@ -64,6 +185,21 @@ TODO: *add diagrams*
 
 **Twitter**: account ~= profile ~= person
 
+**Tumblr**: Primary blog ~= user/account, but also blog. Secondary blog = blog. user can create many secondary blogs. Secondary blog can have many users as members.
+
+* Pump.io
+* YouTube
+* CouchSurfing
+* Facebook
+* Quora
+* OkCupid
+* StackOverflow
+* LinkedIn
+* PeoplePerHour
+* Academia.edu
+* AirBnB
+* Friendica
+
 9. What is a profile for?
 
 **FOAF**:
@@ -72,6 +208,20 @@ TODO: *add diagrams*
 
 **Twitter**:
 
+* Tumblr
+* Pump.io
+* YouTube
+* CouchSurfing
+* Facebook
+* Quora
+* OkCupid
+* StackOverflow
+* LinkedIn
+* PeoplePerHour
+* Academia.edu
+* AirBnB
+* Friendica
+
 10. Who is a profile for?
  
 **FOAF**:
@@ -79,3 +229,17 @@ TODO: *add diagrams*
 **Indieweb**:
 
 **Twitter**:
+
+* Tumblr
+* Pump.io
+* YouTube
+* CouchSurfing
+* Facebook
+* Quora
+* OkCupid
+* StackOverflow
+* LinkedIn
+* PeoplePerHour
+* Academia.edu
+* AirBnB
+* Friendica
