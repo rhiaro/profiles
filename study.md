@@ -14,7 +14,8 @@
 
 **YouTube**: channel art, display picture, content (videos), liked videos, created playlists, curated connections, featured content. Links to: attributes (description, links, country); stats (subs, views, joined); discussion (comments on your content).
 
-* CouchSurfing
+**CouchSurfing**: Attributes (name, age, location, occupation, education, hometown, languages. member since, photo, availability), free text (about me, interests, music movies & books, one amazing thing done, teach learn share, what I can share, countries visited, countries lived in), % complete profile (pushes to connect to fb), verified; links to My Home, Photos, References, Friends.
+
 * Facebook
 * Quora
 * OkCupid
@@ -65,7 +66,8 @@ The JSON object representing the user has the following properties:
 
 **YouTube**: Web form(s) / client UI
 
-* CouchSurfing
+**CouchSurfing**: Web form
+
 * Facebook
 * Quora
 * OkCupid
@@ -96,7 +98,8 @@ The JSON object representing the user has the following properties:
 
 **YouTube**: None.
 
-* CouchSurfing
+**CouchSurfing**: None.
+
 * Facebook
 * Quora
 * OkCupid
@@ -133,7 +136,8 @@ Can grant write access and transfer admin between users for secondary blogs.
 
 **YouTube**: Pretty granular. pub/priv: liked videos, saved playlists, subscriptions; subscribers. exist or not: name, country, keywords. Appear as a recommended channel on/off.
 
-* CouchSurfing
+**CouchSurfing**: Most things optional. Options: First or full name; restrict to log in members.
+
 * Facebook
 * Quora
 * OkCupid
@@ -164,7 +168,8 @@ Can grant write access and transfer admin between users for secondary blogs.
 
 **YouTube**: `Subscribe` to a channel, one way.
 
-* CouchSurfing
+**CouchSurfing**: Friends - specify hosted/surft/traveled/never met, and closeness. Couch request/offer (but this doesn't create a persistant connection). References.
+
 * Facebook
 * Quora
 * OkCupid
@@ -195,7 +200,8 @@ Can grant write access and transfer admin between users for secondary blogs.
 
 **YouTube**: Google Takeout export as JSON or OPML. Export analytics.
 
-* CouchSurfing
+**CouchSurfing**: n/a
+
 * Facebook
 * Quora
 * OkCupid
@@ -228,7 +234,14 @@ Secondary blogs can't 'initiate social features' (follow, like, ask, fan mail et
 
 **YouTube**: Some ToS rules about linking to external sites.
 
-* CouchSurfing
+**CouchSurfing**:
+
+```
+5. Do Create Only One Profile: Duplicate, fake, and joke profiles are not allowed. The first profile that you create must be you and is the only one that you may have. Our trust network needs everyone to stand by their reputation.
+
+6. Do Be Yourself: Misrepresenting yourself as someone else is prohibited. This includes representation as an agent, representative, employee, or affiliate of Couchsurfing.
+```
+
 * Facebook
 * Quora
 * OkCupid
@@ -261,7 +274,8 @@ TODO: *add diagrams*
 
 **YouTube**: one Google account, many channels. Channels as personas (ie. you post comments / act as a channel)
 
-* CouchSurfing
+**CouchSurfing**: real people with info about them.
+
 * Facebook
 * Quora
 * OkCupid
