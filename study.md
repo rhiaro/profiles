@@ -12,7 +12,8 @@
 
 **Pump.io**: Attributes (name, hometown, bio, avatar) and content (major in main feed) and activities (minor down the side) (ActivityStreams)
 
-* YouTube
+**YouTube**: channel art, display picture, content (videos), liked videos, created playlists, curated connections, featured content. Links to: attributes (description, links, country); stats (subs, views, joined); discussion (comments on your content).
+
 * CouchSurfing
 * Facebook
 * Quora
@@ -62,7 +63,8 @@ The JSON object representing the user has the following properties:
 * profile: a "person" object. This is created automatically when you create a new user; don't try to add it yourself. Don't update this directly; update the person through its object endpoint.
 ```
 
-* YouTube
+**YouTube**: Web form(s) / client UI
+
 * CouchSurfing
 * Facebook
 * Quora
@@ -92,7 +94,8 @@ The JSON object representing the user has the following properties:
 
 **Pump.io**: minor 'update' activity
 
-* YouTube
+**YouTube**: None.
+
 * CouchSurfing
 * Facebook
 * Quora
@@ -128,7 +131,8 @@ Can grant write access and transfer admin between users for secondary blogs.
 
 **Pump.io**: Individual resources can be addressed to groups or users, but profile attributes are all public (but none required). No anonymous activities. No way to invisibly do minor activities.
 
-* YouTube
+**YouTube**: Pretty granular. pub/priv: liked videos, saved playlists, subscriptions; subscribers. exist or not: name, country, keywords. Appear as a recommended channel on/off.
+
 * CouchSurfing
 * Facebook
 * Quora
@@ -158,7 +162,8 @@ Can grant write access and transfer admin between users for secondary blogs.
 
 **Pump.io**: `Follow` a user. Minor activity and notification when someone follows you. Added to 'follows' collection (public). One way.
 
-* YouTube
+**YouTube**: `Subscribe` to a channel, one way.
+
 * CouchSurfing
 * Facebook
 * Quora
@@ -188,7 +193,8 @@ Can grant write access and transfer admin between users for secondary blogs.
 
 **Pump.io**: Open format, AS JSON. No API for export, or anything in Web client. Can theoretically move between servers.
 
-* YouTube
+**YouTube**: Google Takeout export as JSON or OPML. Export analytics.
+
 * CouchSurfing
 * Facebook
 * Quora
@@ -220,7 +226,8 @@ Secondary blogs can't 'initiate social features' (follow, like, ask, fan mail et
 
 **Pump.io**: Server specific ToS?
 
-* YouTube
+**YouTube**: Some ToS rules about linking to external sites.
+
 * CouchSurfing
 * Facebook
 * Quora
@@ -252,7 +259,8 @@ TODO: *add diagrams*
 
 **Pump.io**: AS Person: url, image, displayName, id, arbitrary extension properties. Profile URL + webfinger user@server id. `actor` relation with activities, `author` relation with objects.
 
-* YouTube
+**YouTube**: one Google account, many channels. Channels as personas (ie. you post comments / act as a channel)
+
 * CouchSurfing
 * Facebook
 * Quora
