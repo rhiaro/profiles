@@ -1,3 +1,5 @@
+
+
 1. What does a profile contain?
 
 **FOAF**: Attributes (fixed in FOAF but extensible with other vocabs), connections, links to authored content (maybe).
@@ -8,7 +10,8 @@
 
 **Tumblr**: Content; original posts and reposts. Attributes: username, blog title, blog description. (Separate page for likes which is optionally public). No stats by default.
 
-* Pump.io
+**Pump.io**: Attributes (name, hometown, bio, avatar) and content (major in main feed) and activities (minor down the side) (ActivityStreams)
+
 * YouTube
 * CouchSurfing
 * Facebook
@@ -20,6 +23,12 @@
 * Academia.edu
 * AirBnB
 * Friendica
+* Diaspora
+* Reddit
+* Imgur
+* zooniverse
+* runkeeper
+* github
 
 2. How are profiles updated?
 
@@ -29,8 +38,6 @@
 
 **Twitter**: Web form / client UI.
 
-**Tumblr**: Web form, mixed in with blog appearance/settings.
-
 API:
 
 WAIT THESE ARE ALL GET. No POST for update o.O
@@ -39,7 +46,22 @@ WAIT THESE ARE ALL GET. No POST for update o.O
 * `/user/dashboard` (which is feed of what they see that they're subscribed to etc)
 * `/user/likes`, `/user/following`
 
-* Pump.io
+**Tumblr**: Web form, mixed in with blog appearance/settings.
+
+**Pump.io**: Web form / client UI
+
+API:
+
+```
+To create a new user, POST a user representation (see below) to the list.
+
+The JSON object representing the user has the following properties:
+
+* nickname: The user's nickname. 1-64 characters, including only ASCII capital and lowercase letters and numbers as well as "-", ".", and "_". The nickname is immutable and unique per server; it can't be changed.
+* password: The plain-text password. This isn't returned when you GET the user object, but you have to provide it when registering or updating the user.
+* profile: a "person" object. This is created automatically when you create a new user; don't try to add it yourself. Don't update this directly; update the person through its object endpoint.
+```
+
 * YouTube
 * CouchSurfing
 * Facebook
@@ -51,6 +73,12 @@ WAIT THESE ARE ALL GET. No POST for update o.O
 * Academia.edu
 * AirBnB
 * Friendica
+* Diaspora
+* Reddit
+* Imgur
+* zooniverse
+* runkeeper
+* github
 
 3. How are people notified of profile updates?
 
@@ -62,7 +90,8 @@ WAIT THESE ARE ALL GET. No POST for update o.O
 
 **Tumblr**: None.
 
-* Pump.io
+**Pump.io**: minor 'update' activity
+
 * YouTube
 * CouchSurfing
 * Facebook
@@ -74,6 +103,12 @@ WAIT THESE ARE ALL GET. No POST for update o.O
 * Academia.edu
 * AirBnB
 * Friendica
+* Diaspora
+* Reddit
+* Imgur
+* zooniverse
+* runkeeper
+* github
 
 4. Access control?
 
@@ -91,7 +126,8 @@ You can block users: they can't follow, send fan mails or asks, see your posts i
 
 Can grant write access and transfer admin between users for secondary blogs.
 
-* Pump.io
+**Pump.io**: Individual resources can be addressed to groups or users, but profile attributes are all public (but none required). No anonymous activities. No way to invisibly do minor activities.
+
 * YouTube
 * CouchSurfing
 * Facebook
@@ -103,6 +139,12 @@ Can grant write access and transfer admin between users for secondary blogs.
 * Academia.edu
 * AirBnB
 * Friendica
+* Diaspora
+* Reddit
+* Imgur
+* zooniverse
+* runkeeper
+* github
 
 5. Connections?
 
@@ -114,7 +156,8 @@ Can grant write access and transfer admin between users for secondary blogs.
 
 **Tumblr**: `Follow` a blog. (Not a user).
 
-* Pump.io
+**Pump.io**: `Follow` a user. Minor activity and notification when someone follows you. Added to 'follows' collection (public). One way.
+
 * YouTube
 * CouchSurfing
 * Facebook
@@ -126,6 +169,12 @@ Can grant write access and transfer admin between users for secondary blogs.
 * Academia.edu
 * AirBnB
 * Friendica
+* Diaspora
+* Reddit
+* Imgur
+* zooniverse
+* runkeeper
+* github
 
 6. Portability?
 
@@ -137,7 +186,8 @@ Can grant write access and transfer admin between users for secondary blogs.
 
 **Tumblr**: Third party tools only, references from some time ago, don't know if they still work.
 
-* Pump.io
+**Pump.io**: Open format, AS JSON. No API for export, or anything in Web client. Can theoretically move between servers.
+
 * YouTube
 * CouchSurfing
 * Facebook
@@ -149,6 +199,12 @@ Can grant write access and transfer admin between users for secondary blogs.
 * Academia.edu
 * AirBnB
 * Friendica
+* Diaspora
+* Reddit
+* Imgur
+* zooniverse
+* runkeeper
+* github
 
 7. Restrictions?
 
@@ -162,7 +218,8 @@ Can grant write access and transfer admin between users for secondary blogs.
 
 Secondary blogs can't 'initiate social features' (follow, like, ask, fan mail etc).
 
-* Pump.io
+**Pump.io**: Server specific ToS?
+
 * YouTube
 * CouchSurfing
 * Facebook
@@ -174,6 +231,12 @@ Secondary blogs can't 'initiate social features' (follow, like, ask, fan mail et
 * Academia.edu
 * AirBnB
 * Friendica
+* Diaspora
+* Reddit
+* Imgur
+* zooniverse
+* runkeeper
+* github
 
 8. Model?
 
@@ -187,7 +250,8 @@ TODO: *add diagrams*
 
 **Tumblr**: Primary blog ~= user/account, but also blog. Secondary blog = blog. user can create many secondary blogs. Secondary blog can have many users as members.
 
-* Pump.io
+**Pump.io**: AS Person: url, image, displayName, id, arbitrary extension properties. Profile URL + webfinger user@server id. `actor` relation with activities, `author` relation with objects.
+
 * YouTube
 * CouchSurfing
 * Facebook
@@ -199,6 +263,12 @@ TODO: *add diagrams*
 * Academia.edu
 * AirBnB
 * Friendica
+* Diaspora
+* Reddit
+* Imgur
+* zooniverse
+* runkeeper
+* github
 
 9. What is a profile for?
 
@@ -221,6 +291,12 @@ TODO: *add diagrams*
 * Academia.edu
 * AirBnB
 * Friendica
+* Diaspora
+* Reddit
+* Imgur
+* zooniverse
+* runkeeper
+* github
 
 10. Who is a profile for?
  
@@ -243,3 +319,9 @@ TODO: *add diagrams*
 * Academia.edu
 * AirBnB
 * Friendica
+* Diaspora
+* Reddit
+* Imgur
+* zooniverse
+* runkeeper
+* github
