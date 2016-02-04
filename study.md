@@ -19,7 +19,9 @@
 * Facebook
 * Quora
 * OkCupid
-* StackOverflow
+
+**StackOverflow**: Attributes (name, role, company, about me, location, links and social media); stats (answers, questions, people reached, member for, profile views, last seen, visits, badges, accept rate, vote counts); content (posts q&q, tags); links to activity, reputation, everything done.
+
 * LinkedIn
 * PeoplePerHour
 * Academia.edu
@@ -71,7 +73,9 @@ The JSON object representing the user has the following properties:
 * Facebook
 * Quora
 * OkCupid
-* StackOverflow
+
+**StackOverflow**: Web form
+
 * LinkedIn
 * PeoplePerHour
 * Academia.edu
@@ -103,7 +107,9 @@ The JSON object representing the user has the following properties:
 * Facebook
 * Quora
 * OkCupid
-* StackOverflow
+
+**StackOverflow**: None.
+
 * LinkedIn
 * PeoplePerHour
 * Academia.edu
@@ -141,7 +147,9 @@ Can grant write access and transfer admin between users for secondary blogs.
 * Facebook
 * Quora
 * OkCupid
-* StackOverflow
+
+**StackOverflow**: Most fields optional, not granular visibility.
+
 * LinkedIn
 * PeoplePerHour
 * Academia.edu
@@ -173,7 +181,9 @@ Can grant write access and transfer admin between users for secondary blogs.
 * Facebook
 * Quora
 * OkCupid
-* StackOverflow
+
+**StackOverflow**: none? RSS feeds for user activity..
+
 * LinkedIn
 * PeoplePerHour
 * Academia.edu
@@ -205,7 +215,9 @@ Can grant write access and transfer admin between users for secondary blogs.
 * Facebook
 * Quora
 * OkCupid
-* StackOverflow
+
+**StackOverflow**: Profiles reusable across StackExchange sites. Export n/a through UI, but there are public dumps of q&a data.
+
 * LinkedIn
 * PeoplePerHour
 * Academia.edu
@@ -245,7 +257,13 @@ Secondary blogs can't 'initiate social features' (follow, like, ask, fan mail et
 * Facebook
 * Quora
 * OkCupid
-* StackOverflow
+
+**StackOverflow**:
+
+```
+Subscriber shall provide Stack Exchange with accurate, complete, and updated registration information, including Subscriber’s e-mail address. Failure to do so shall constitute a breach of this Agreement, which may result in immediate termination of Subscriber's account. Subscriber may not (a) select or use as a profile name a name of another person with the intent to impersonate that person; or (b) use as a profile name a name subject to any rights of a person other than Subscriber without appropriate authorization.
+```
+
 * LinkedIn
 * PeoplePerHour
 * Academia.edu
@@ -279,7 +297,9 @@ TODO: *add diagrams*
 * Facebook
 * Quora
 * OkCupid
-* StackOverflow
+
+**StackOverflow**: content-oriented.. people/personas with info about them.
+
 * LinkedIn
 * PeoplePerHour
 * Academia.edu
