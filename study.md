@@ -32,7 +32,8 @@
 * Imgur
 * zooniverse
 * runkeeper
-* github
+
+**github**: Attributes (name, location, email, website, bio, photo, company, available for hire?); Activity (code contributions, issues, comments); stats (joined, followers, starred, following, organisation membership)
 
 2. How are profiles updated?
 
@@ -86,7 +87,8 @@ The JSON object representing the user has the following properties:
 * Imgur
 * zooniverse
 * runkeeper
-* github
+
+**github**: Web form. `PATCH /user`: name, email, blog, company, location, hireable, bio
 
 3. How are people notified of profile updates?
 
@@ -120,7 +122,8 @@ The JSON object representing the user has the following properties:
 * Imgur
 * zooniverse
 * runkeeper
-* github
+
+**github**: None.
 
 4. Access control?
 
@@ -160,7 +163,8 @@ Can grant write access and transfer admin between users for secondary blogs.
 * Imgur
 * zooniverse
 * runkeeper
-* github
+
+**github**: Most optional, can choose to keep email private.
 
 5. Connections?
 
@@ -194,7 +198,8 @@ Can grant write access and transfer admin between users for secondary blogs.
 * Imgur
 * zooniverse
 * runkeeper
-* github
+
+**github**: follow a user (see all activity in feed), but primary method seems to be to follow content/threads.
 
 6. Portability?
 
@@ -228,7 +233,8 @@ Can grant write access and transfer admin between users for secondary blogs.
 * Imgur
 * zooniverse
 * runkeeper
-* github
+
+**github**: repo content is inherantly portable via git; other stuff avaiable through API but no standard format.
 
 7. Restrictions?
 
@@ -274,7 +280,18 @@ Subscriber shall provide Stack Exchange with accurate, complete, and updated reg
 * Imgur
 * zooniverse
 * runkeeper
-* github
+
+**github**:
+
+```
+You must be a human. Accounts registered by "bots" or other automated methods are not permitted.
+
+You must provide your name, a valid email address, and any other information requested in order to complete the signup process.
+
+Your login may only be used by one person - a single login shared by multiple people is not permitted. You may create separate logins for as many people as your plan allows.
+
+One person or legal entity may not maintain more than one free account.
+```
 
 8. Model?
 
@@ -310,7 +327,8 @@ TODO: *add diagrams*
 * Imgur
 * zooniverse
 * runkeeper
-* github
+
+**github**: content/activity-oriented.. people/users with attriutes about them, and relationships to content/actions.
 
 9. What is a profile for?
 
