@@ -31,7 +31,8 @@
 * Reddit
 * Imgur
 * zooniverse
-* runkeeper
+
+**runkeeper**: Attributes (name, photo, location, motivation, gender, birthday, weight, body measurements, nutrition, certain health conditions); Activities (recent PRs, summaries, exercise tracked); Stats (miles, # activities, calories, # friends, active since)
 
 **github**: Attributes (name, location, email, website, bio, photo, company, available for hire?); Activity (code contributions, issues, comments); stats (joined, followers, starred, following, organisation membership)
 
@@ -86,7 +87,19 @@ The JSON object representing the user has the following properties:
 * Reddit
 * Imgur
 * zooniverse
-* runkeeper
+
+**runkeeper**: Web form. API:
+
+```
+PUT /profile HTTP/1.1
+Host: api.runkeeper.com
+Authorization: Bearer xxxxxxxxxxxxxxxx
+Content-Type: application/vnd.com.runkeeper.Profile+json
+
+{
+"athlete_type": "Ultra Marathoner"
+}
+```
 
 **github**: Web form. `PATCH /user`: name, email, blog, company, location, hireable, bio
 
@@ -121,7 +134,8 @@ The JSON object representing the user has the following properties:
 * Reddit
 * Imgur
 * zooniverse
-* runkeeper
+
+**runkeeper**: None.
 
 **github**: None.
 
@@ -162,7 +176,8 @@ Can grant write access and transfer admin between users for secondary blogs.
 * Reddit
 * Imgur
 * zooniverse
-* runkeeper
+
+**runkeeper**: 'Sharing' Everyone/Friends/Just Me, profile things in groups of different levels of granularity (body measurements, weight, diabetes, nutrition, sleep, activities). Anything not in this list is an optional thing to fill in I guess, ie no way to say 'name' is friends only.
 
 **github**: Most optional, can choose to keep email private.
 
@@ -197,7 +212,8 @@ Can grant write access and transfer admin between users for secondary blogs.
 * Reddit
 * Imgur
 * zooniverse
-* runkeeper
+
+**runkeeper**: 2 way friendship (request-accept); used with access control as 4, and delivery/notifications.
 
 **github**: follow a user (see all activity in feed), but primary method seems to be to follow content/threads.
 
@@ -232,7 +248,8 @@ Can grant write access and transfer admin between users for secondary blogs.
 * Reddit
 * Imgur
 * zooniverse
-* runkeeper
+
+**runkeeper**: All data exportable, not standard format.
 
 **github**: repo content is inherantly portable via git; other stuff avaiable through API but no standard format.
 
@@ -279,7 +296,12 @@ Subscriber shall provide Stack Exchange with accurate, complete, and updated reg
 * Reddit
 * Imgur
 * zooniverse
-* runkeeper
+
+**runkeeper**:
+
+```
+agree that you will not: ... (v) impersonate another person.
+```
 
 **github**:
 
@@ -326,7 +348,8 @@ TODO: *add diagrams*
 * Reddit
 * Imgur
 * zooniverse
-* runkeeper
+
+**runkeeper**: person with IRL attributes and activities logged.
 
 **github**: content/activity-oriented.. people/users with attriutes about them, and relationships to content/actions.
 
