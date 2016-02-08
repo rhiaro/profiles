@@ -17,7 +17,9 @@
 **CouchSurfing**: Attributes (name, age, location, occupation, education, hometown, languages. member since, photo, availability), free text (about me, interests, music movies & books, one amazing thing done, teach learn share, what I can share, countries visited, countries lived in), % complete profile (pushes to connect to fb), verified; links to My Home, Photos, References, Friends.
 
 * Facebook
-* Quora
+
+**Quora**: Attributes (name, photo, bio, description, social media links, location, knows about); Activity (questions, answers, votes, comments, edits, posts); stats (# ^, # followers, # following, highlights (badges basically), views on answers)
+
 * OkCupid
 
 **StackOverflow**: Attributes (name, role, company, about me, location, links and social media); stats (answers, questions, people reached, member for, profile views, last seen, visits, badges, accept rate, vote counts); content (posts q&q, tags); links to activity, reputation, everything done.
@@ -73,7 +75,9 @@ The JSON object representing the user has the following properties:
 **CouchSurfing**: Web form
 
 * Facebook
-* Quora
+
+**Quora**: Web form, built into profile view.
+
 * OkCupid
 
 **StackOverflow**: Web form
@@ -120,7 +124,9 @@ Content-Type: application/vnd.com.runkeeper.Profile+json
 **CouchSurfing**: None.
 
 * Facebook
-* Quora
+
+**Quora**: None.
+
 * OkCupid
 
 **StackOverflow**: None.
@@ -162,7 +168,9 @@ Can grant write access and transfer admin between users for secondary blogs.
 **CouchSurfing**: Most things optional. Options: First or full name; restrict to log in members.
 
 * Facebook
-* Quora
+
+**Quora**: Online presence on/off. Nothing for profile attributes. Can choose to ask/answer as Anonymous, but still logged in.
+
 * OkCupid
 
 **StackOverflow**: Most fields optional, not granular visibility.
@@ -198,7 +206,9 @@ Can grant write access and transfer admin between users for secondary blogs.
 **CouchSurfing**: Friends - specify hosted/surft/traveled/never met, and closeness. Couch request/offer (but this doesn't create a persistant connection). References.
 
 * Facebook
-* Quora
+
+**Quora**: follow a user (one way)
+
 * OkCupid
 
 **StackOverflow**: none? RSS feeds for user activity..
@@ -234,7 +244,9 @@ Can grant write access and transfer admin between users for secondary blogs.
 **CouchSurfing**: n/a
 
 * Facebook
-* Quora
+
+**Quora**: No export, no API
+
 * OkCupid
 
 **StackOverflow**: Profiles reusable across StackExchange sites. Export n/a through UI, but there are public dumps of q&a data.
@@ -278,7 +290,15 @@ Secondary blogs can't 'initiate social features' (follow, like, ask, fan mail et
 ```
 
 * Facebook
-* Quora
+
+**Quora**:
+
+```
+... you must provide us accurate information, including your real name, when you create your account on Quora.
+
+agree that you have not and will not contribute any Content that ... (e) creates an impression that you know is incorrect, misleading, or deceptive, including by impersonating others or otherwise misrepresenting your affiliation with a person or entity;
+```
+
 * OkCupid
 
 **StackOverflow**:
@@ -334,7 +354,9 @@ TODO: *add diagrams*
 **CouchSurfing**: real people with info about them.
 
 * Facebook
-* Quora
+
+**Quora**: real people with info about them; content-oriented where reputation is built on content votes, and trust from completing profile.
+
 * OkCupid
 
 **StackOverflow**: content-oriented.. people/personas with info about them.
