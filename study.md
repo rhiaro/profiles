@@ -29,7 +29,9 @@
 **PeoplePerHour**: Attributes (name, job title, cover image, profile picture, per hour rate, phone, about you, skills (enum), location, remote only or onsite possible, miles willing to travel. Content (intro video; portfolio files). Stats (# reviews, online presence, rating, projects completed, buyers worked with, last project). From others (reviews, endorsements).
 
 * Academia.edu
-* AirBnB
+
+**AirBnB**: Attributes (name, location, ID type, school, languages, photo, about; private by default: email, phone, gender, date of birth). Stats: member since, # reviews, (un)verified). Others (reviews). Content ('symbol', profile video 30 secs).
+
 * Friendica
 * Diaspora
 * Reddit
@@ -89,7 +91,9 @@ The JSON object representing the user has the following properties:
 **PeoplePerHour**: Web form
 
 * Academia.edu
-* AirBnB
+
+**AirBnB**: Web form.
+
 * Friendica
 * Diaspora
 * Reddit
@@ -140,7 +144,9 @@ Content-Type: application/vnd.com.runkeeper.Profile+json
 **PeoplePerHour**: None.
 
 * Academia.edu
-* AirBnB
+
+**AirBnB**: None.
+
 * Friendica
 * Diaspora
 * Reddit
@@ -186,7 +192,9 @@ Can grant write access and transfer admin between users for secondary blogs.
 **PeoplePerHour**: Show hourlies on/off. Index by search engines on/off.
 
 * Academia.edu
-* AirBnB
+
+**AirBnB**: Some things are private by default. Social connections to share activity on fb only with other airbnb users, and suck some data through from fb. Hosts can require certain profile attributes are filled in.
+
 * Friendica
 * Diaspora
 * Reddit
@@ -226,7 +234,9 @@ Can grant write access and transfer admin between users for secondary blogs.
 **PeoplePerHour**: Add user to favourites.
 
 * Academia.edu
-* AirBnB
+
+**AirBnB**: n/a (only references, nothing persistant)
+
 * Friendica
 * Diaspora
 * Reddit
@@ -266,7 +276,9 @@ Can grant write access and transfer admin between users for secondary blogs.
 **PeoplePerHour**: n/a
 
 * Academia.edu
-* AirBnB
+
+**AirBnB**: Nothing for profile. Export csv of transaction history, and various calendar syncing.
+
 * Friendica
 * Diaspora
 * Reddit
@@ -354,7 +366,18 @@ share your bank account or any other withdrawal method. Such practice is against
 ```
 
 * Academia.edu
-* AirBnB
+
+**AirBnB**:
+
+```
+Your Airbnb Account and your Airbnb Account profile page will be created for your use of the Site and Application based upon the personal information you provide to us or that we obtain via an SNS as described above. You may not have more than one (1) active Airbnb Account. You agree to provide accurate, current and complete information during the registration process and to update such information to keep it accurate, current and complete. Airbnb reserves the right to suspend or terminate your Airbnb Account and your access to the Site, Application and Services if you create more than one (1) Airbnb Account, or if any information provided during the registration process or thereafter proves to be inaccurate, fraudulent, not current or incomplete.
+
+you will not: ...
+* register for more than one Airbnb Account or register for an Airbnb Account on behalf of an individual other than yourself;
+* unless Airbnb explicitly permits otherwise, request or book a stay at any Accommodation if you will not actually be staying at the Accommodation yourself;
+* impersonate any person or entity, or falsify or otherwise misrepresent yourself or your affiliation with any person or entity;
+```
+
 * Friendica
 * Diaspora
 * Reddit
@@ -410,7 +433,9 @@ TODO: *add diagrams*
 **PeoplePerHour**: Real people with attributes and experience and endorsements from others.
 
 * Academia.edu
-* AirBnB
+
+**AirBnB**: real people.
+
 * Friendica
 * Diaspora
 * Reddit
