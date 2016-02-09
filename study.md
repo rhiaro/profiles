@@ -24,7 +24,8 @@
 
 **StackOverflow**: Attributes (name, role, company, about me, location, links and social media); stats (answers, questions, people reached, member for, profile views, last seen, visits, badges, accept rate, vote counts); content (posts q&q, tags); links to activity, reputation, everything done.
 
-* LinkedIn
+**LinkedIn**: Attributes (name, photo, location, hometown, experience, education, summary, languages, voluntary experience, organisations, honors and awards, test scores, courses, patents, projects, publications, certifications, interests, personal details, contact information, skills, background photo); Content (posts, media) (not on profile: likes, status updates); Stats (groups, following, rank, views); from others (endorsements).
+
 * PeoplePerHour
 * Academia.edu
 * AirBnB
@@ -82,7 +83,8 @@ The JSON object representing the user has the following properties:
 
 **StackOverflow**: Web form
 
-* LinkedIn
+**LinkedIn**: Web form built into profile view.
+
 * PeoplePerHour
 * Academia.edu
 * AirBnB
@@ -131,7 +133,8 @@ Content-Type: application/vnd.com.runkeeper.Profile+json
 
 **StackOverflow**: None.
 
-* LinkedIn
+**LinkedIn**: If enabled by subject.
+
 * PeoplePerHour
 * Academia.edu
 * AirBnB
@@ -175,7 +178,8 @@ Can grant write access and transfer admin between users for secondary blogs.
 
 **StackOverflow**: Most fields optional, not granular visibility.
 
-* LinkedIn
+**LinkedIn**: Some individual attributes visibility: My Connections / My Network / Everyone. Public profile visible to: No-one / Everyone with on/off for (Basics, Picture, Headline, Websites, Summary, Skills, Organisations, Groups). Connections: Connections / Only You. Public posts: Everyone / Connections. Activity feed: Everyone / Network / Connections / Only You.
+
 * PeoplePerHour
 * Academia.edu
 * AirBnB
@@ -213,7 +217,8 @@ Can grant write access and transfer admin between users for secondary blogs.
 
 **StackOverflow**: none? RSS feeds for user activity..
 
-* LinkedIn
+**LinkedIn**: Follow (one way) someone if they allow. 2 way 'Connect' can require reason or input contact details as proof.
+
 * PeoplePerHour
 * Academia.edu
 * AirBnB
@@ -251,7 +256,8 @@ Can grant write access and transfer admin between users for secondary blogs.
 
 **StackOverflow**: Profiles reusable across StackExchange sites. Export n/a through UI, but there are public dumps of q&a data.
 
-* LinkedIn
+**LinkedIn**: Can download a full archive of all data, activity, connections, *everything*.
+
 * PeoplePerHour
 * Academia.edu
 * AirBnB
@@ -307,7 +313,14 @@ agree that you have not and will not contribute any Content that ... (e) creates
 Subscriber shall provide Stack Exchange with accurate, complete, and updated registration information, including Subscriber’s e-mail address. Failure to do so shall constitute a breach of this Agreement, which may result in immediate termination of Subscriber's account. Subscriber may not (a) select or use as a profile name a name of another person with the intent to impersonate that person; or (b) use as a profile name a name subject to any rights of a person other than Subscriber without appropriate authorization.
 ```
 
-* LinkedIn
+**LinkedIn**:
+
+```
+To use the Services, you agree that: ... (2) you will only have one LinkedIn account, which must be in your real name
+
+You agree to ... (3) not transfer any part of your account (e.g., connections, groups)
+```
+
 * PeoplePerHour
 * Academia.edu
 * AirBnB
@@ -361,7 +374,8 @@ TODO: *add diagrams*
 
 **StackOverflow**: content-oriented.. people/personas with info about them.
 
-* LinkedIn
+**LinkedIn**: Real people with attributes and experiences.
+
 * PeoplePerHour
 * Academia.edu
 * AirBnB
