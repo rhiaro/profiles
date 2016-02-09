@@ -26,7 +26,8 @@
 
 **LinkedIn**: Attributes (name, photo, location, hometown, experience, education, summary, languages, voluntary experience, organisations, honors and awards, test scores, courses, patents, projects, publications, certifications, interests, personal details, contact information, skills, background photo); Content (posts, media) (not on profile: likes, status updates); Stats (groups, following, rank, views); from others (endorsements).
 
-* PeoplePerHour
+**PeoplePerHour**: Attributes (name, job title, cover image, profile picture, per hour rate, phone, about you, skills (enum), location, remote only or onsite possible, miles willing to travel. Content (intro video; portfolio files). Stats (# reviews, online presence, rating, projects completed, buyers worked with, last project). From others (reviews, endorsements).
+
 * Academia.edu
 * AirBnB
 * Friendica
@@ -85,7 +86,8 @@ The JSON object representing the user has the following properties:
 
 **LinkedIn**: Web form built into profile view.
 
-* PeoplePerHour
+**PeoplePerHour**: Web form
+
 * Academia.edu
 * AirBnB
 * Friendica
@@ -135,7 +137,8 @@ Content-Type: application/vnd.com.runkeeper.Profile+json
 
 **LinkedIn**: If enabled by subject.
 
-* PeoplePerHour
+**PeoplePerHour**: None.
+
 * Academia.edu
 * AirBnB
 * Friendica
@@ -180,7 +183,8 @@ Can grant write access and transfer admin between users for secondary blogs.
 
 **LinkedIn**: Some individual attributes visibility: My Connections / My Network / Everyone. Public profile visible to: No-one / Everyone with on/off for (Basics, Picture, Headline, Websites, Summary, Skills, Organisations, Groups). Connections: Connections / Only You. Public posts: Everyone / Connections. Activity feed: Everyone / Network / Connections / Only You.
 
-* PeoplePerHour
+**PeoplePerHour**: Show hourlies on/off. Index by search engines on/off.
+
 * Academia.edu
 * AirBnB
 * Friendica
@@ -219,7 +223,8 @@ Can grant write access and transfer admin between users for secondary blogs.
 
 **LinkedIn**: Follow (one way) someone if they allow. 2 way 'Connect' can require reason or input contact details as proof.
 
-* PeoplePerHour
+**PeoplePerHour**: Add user to favourites.
+
 * Academia.edu
 * AirBnB
 * Friendica
@@ -258,7 +263,8 @@ Can grant write access and transfer admin between users for secondary blogs.
 
 **LinkedIn**: Can download a full archive of all data, activity, connections, *everything*.
 
-* PeoplePerHour
+**PeoplePerHour**: n/a
+
 * Academia.edu
 * AirBnB
 * Friendica
@@ -321,7 +327,32 @@ To use the Services, you agree that: ... (2) you will only have one LinkedIn acc
 You agree to ... (3) not transfer any part of your account (e.g., connections, groups)
 ```
 
-* PeoplePerHour
+**PeoplePerHour**:
+
+```
+To use PPH, Users have to register for an account, provide accurate and complete information, and keep their account information updated. Both Buyers and Sellers undergo the same account registration process.
+Each account must be a personal account, but Users may trade as a sole trader, company or any other legal entity (whether incorporated or unincorporated).
+Users cannot register for more than one account.
+The information that Users supply in the public profile of their account must comply with PPH profile policies (http://support.peopleperhour.com/hc/en-us/articles/205218177-Profile-policies)
+
+Your profile is your “shop front” as a Seller so it is recommended that you invest the time to include as much information as you can to highlight your skills and credentials.   When creating your profile we have a few policies that Sellers are expected to adhere to.  These policies form part of our T&Cs.
+
+ 
+
+Do
+
+make sure that all of the information contained in your profile is a true and accurate representation.  Including your name, location and details of your credentials;
+include a professional image of yourself as your profile image.  You can choose to have your company logo instead however we strongly recommend a personal photo instead.  The PPH marketplace is built on trust and personal photos rather than logos have been shown to make a significant difference to success;
+include as profile cover a quality image or photo of yourself or a scenery. Avoid excessive amount of text keeping it to the length of a tagline. You can include visual representation of your work or part of your actual portfolio if visual.
+Don't
+
+include your full name, or contact details in your profile description, cover image, portfolio items or any other section of your profile.  This rule is first and foremost to protect you; we would discourage you from publishing your contact details visibly on any public site.
+open more than one user account with PeoplePerHour.  Duplicate accounts will be closed;
+include any links to your website or any third party website anywhere in your profile including your profile image or portfolio images;
+upload any content to your profile that breaches our terms and conditions including all the obvious things like abusive, offensive, defamatory or infringing content.
+share your bank account or any other withdrawal method. Such practice is against our Terms and Conditions of Website Use and leads to permanent account suspension.
+```
+
 * Academia.edu
 * AirBnB
 * Friendica
@@ -376,7 +407,8 @@ TODO: *add diagrams*
 
 **LinkedIn**: Real people with attributes and experiences.
 
-* PeoplePerHour
+**PeoplePerHour**: Real people with attributes and experience and endorsements from others.
+
 * Academia.edu
 * AirBnB
 * Friendica
