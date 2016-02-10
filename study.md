@@ -20,7 +20,7 @@
 
 **Quora**: Attributes (name, photo, bio, description, social media links, location, knows about); Activity (questions, answers, votes, comments, edits, posts); stats (# ^, # followers, # following, highlights (badges basically), views on answers)
 
-* OkCupid
+**Okcupid**: Attributes (photo, age, location, gender, Self-summary, What I'm doing with my life, I'm really good at, Favorite books, movies, shows, music and food; The six things I could never do without; The first thing people usually notice about me; I spend a lot of time thinking about; On a typical Friday night I am; You should message me if; I'm looking for [Men/Women/Everyone], ages between, near me?, must be single?, for [new friends / long-term dating / short-term dating / casual sex]; orientation; ethnicity; status; relationship type; height; body type; diet; smoking; drinking; drugs; religion; sign; education; offspring; pets; languages spoken). Stats (personality traits compared to average; % match with person reading profile). Content (photos, questions and answers).
 
 **StackOverflow**: Attributes (name, role, company, about me, location, links and social media); stats (answers, questions, people reached, member for, profile views, last seen, visits, badges, accept rate, vote counts); content (posts q&q, tags); links to activity, reputation, everything done.
 
@@ -28,7 +28,7 @@
 
 **PeoplePerHour**: Attributes (name, job title, cover image, profile picture, per hour rate, phone, about you, skills (enum), location, remote only or onsite possible, miles willing to travel. Content (intro video; portfolio files). Stats (# reviews, online presence, rating, projects completed, buyers worked with, last project). From others (reviews, endorsements).
 
-* Academia.edu
+**ResearchGate**: Attributes (name, institution, discipline and subject(s), skills, photo, email, topics, degree, position, awards and achievements, about, advisors, scientific societies, ORCHID, journal referree, interests. Content (publications, many types). Stats (# publications, reads, citations, impact points, top co-authors, following, followers).
 
 **AirBnB**: Attributes (name, location, ID type, school, languages, photo, about; private by default: email, phone, gender, date of birth). Stats: member since, # reviews, (un)verified). Others (reviews). Content ('symbol', profile video 30 secs).
 
@@ -82,7 +82,7 @@ The JSON object representing the user has the following properties:
 
 **Quora**: Web form, built into profile view.
 
-* OkCupid
+**Okcupid**: Web forms, some inline, some separate.
 
 **StackOverflow**: Web form
 
@@ -90,7 +90,7 @@ The JSON object representing the user has the following properties:
 
 **PeoplePerHour**: Web form
 
-* Academia.edu
+**ResearchGate**: Web form built into profile view.
 
 **AirBnB**: Web form.
 
@@ -135,7 +135,7 @@ Content-Type: application/vnd.com.runkeeper.Profile+json
 
 **Quora**: None.
 
-* OkCupid
+**Okcupid**: Yes, in your activity stream (people wh you looked at or in any way interacted with or who okc just decided to show you).
 
 **StackOverflow**: None.
 
@@ -143,7 +143,7 @@ Content-Type: application/vnd.com.runkeeper.Profile+json
 
 **PeoplePerHour**: None.
 
-* Academia.edu
+**ResearchGate**: None.
 
 **AirBnB**: None.
 
@@ -183,7 +183,7 @@ Can grant write access and transfer admin between users for secondary blogs.
 
 **Quora**: Online presence on/off. Nothing for profile attributes. Can choose to ask/answer as Anonymous, but still logged in.
 
-* OkCupid
+**Okcupid**: Requires okc login on/off. Nothing required.
 
 **StackOverflow**: Most fields optional, not granular visibility.
 
@@ -191,7 +191,7 @@ Can grant write access and transfer admin between users for secondary blogs.
 
 **PeoplePerHour**: Show hourlies on/off. Index by search engines on/off.
 
-* Academia.edu
+**ResearchGate**: Research data: everyone / mutual followers / researchgate members. If you've read other peoples' on/off. Fixed on/off settings for some things: public profile, photo, questions and answers.
 
 **AirBnB**: Some things are private by default. Social connections to share activity on fb only with other airbnb users, and suck some data through from fb. Hosts can require certain profile attributes are filled in.
 
@@ -225,7 +225,7 @@ Can grant write access and transfer admin between users for secondary blogs.
 
 **Quora**: follow a user (one way)
 
-* OkCupid
+**Okcupid**: Like/bookmark (same thing, interchangeable language). Only revealed if mutual.
 
 **StackOverflow**: none? RSS feeds for user activity..
 
@@ -233,7 +233,7 @@ Can grant write access and transfer admin between users for secondary blogs.
 
 **PeoplePerHour**: Add user to favourites.
 
-* Academia.edu
+**ResearchGate**: Follow (one way).
 
 **AirBnB**: n/a (only references, nothing persistant)
 
@@ -267,7 +267,7 @@ Can grant write access and transfer admin between users for secondary blogs.
 
 **Quora**: No export, no API
 
-* OkCupid
+**Okcupid**: No official API, no export.
 
 **StackOverflow**: Profiles reusable across StackExchange sites. Export n/a through UI, but there are public dumps of q&a data.
 
@@ -275,7 +275,7 @@ Can grant write access and transfer admin between users for secondary blogs.
 
 **PeoplePerHour**: n/a
 
-* Academia.edu
+**ResearchGate**: Export profile as csv.
 
 **AirBnB**: Nothing for profile. Export csv of transaction history, and various calendar syncing.
 
@@ -323,7 +323,12 @@ Secondary blogs can't 'initiate social features' (follow, like, ask, fan mail et
 agree that you have not and will not contribute any Content that ... (e) creates an impression that you know is incorrect, misleading, or deceptive, including by impersonating others or otherwise misrepresenting your affiliation with a person or entity;
 ```
 
-* OkCupid
+**OkCupid**:
+
+```
+Unique and bona fide profile
+You agree to create only one unique profile. In addition, in order to maintain the integrity of the Website, by joining, you agree that your use of the Website shall be for bona fide relationship-seeking purposes (for example, you may not use the Website solely to compile a report of compatible singles in your area, or to write a school research paper). From time to time, we may create test profiles in order to monitor the operation of our services.
+```
 
 **StackOverflow**:
 
@@ -365,7 +370,7 @@ upload any content to your profile that breaches our terms and conditions includ
 share your bank account or any other withdrawal method. Such practice is against our Terms and Conditions of Website Use and leads to permanent account suspension.
 ```
 
-* Academia.edu
+**ResearchGate**: Nothing to do with profiles?!
 
 **AirBnB**:
 
@@ -424,7 +429,7 @@ TODO: *add diagrams*
 
 **Quora**: real people with info about them; content-oriented where reputation is built on content votes, and trust from completing profile.
 
-* OkCupid
+**Okcupid**: personas with attributes.
 
 **StackOverflow**: content-oriented.. people/personas with info about them.
 
@@ -432,7 +437,7 @@ TODO: *add diagrams*
 
 **PeoplePerHour**: Real people with attributes and experience and endorsements from others.
 
-* Academia.edu
+**ResearchGate**: Real people.
 
 **AirBnB**: real people.
 
@@ -460,11 +465,11 @@ TODO: *add diagrams*
 * CouchSurfing
 * Facebook
 * Quora
-* OkCupid
+**Okcupid**:
 * StackOverflow
 * LinkedIn
 * PeoplePerHour
-* Academia.edu
+**ResearchGate**:
 * AirBnB
 * Friendica
 * Diaspora
@@ -488,11 +493,11 @@ TODO: *add diagrams*
 * CouchSurfing
 * Facebook
 * Quora
-* OkCupid
+**Okcupid**:
 * StackOverflow
 * LinkedIn
 * PeoplePerHour
-* Academia.edu
+**ResearchGate**:
 * AirBnB
 * Friendica
 * Diaspora
