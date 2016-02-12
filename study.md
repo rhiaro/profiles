@@ -16,7 +16,7 @@
 
 **CouchSurfing**: Attributes (name, age, location, occupation, education, hometown, languages. member since, photo, availability), free text (about me, interests, music movies & books, one amazing thing done, teach learn share, what I can share, countries visited, countries lived in), % complete profile (pushes to connect to fb), verified; links to My Home, Photos, References, Friends.
 
-* Facebook
+**Facebook**: Attributes (literally everything you can think of, free text and enum and select from content created by others eg. pages). Content (status updates, notes, photos, videos, other media). Stats (friends, following, likes, groups). Activities (interactions with other people and content, stuff cross posted from linked apps and sites).
 
 **Quora**: Attributes (name, photo, bio, description, social media links, location, knows about); Activity (questions, answers, votes, comments, edits, posts); stats (# ^, # followers, # following, highlights (badges basically), views on answers)
 
@@ -33,10 +33,8 @@
 **AirBnB**: Attributes (name, location, ID type, school, languages, photo, about; private by default: email, phone, gender, date of birth). Stats: member since, # reviews, (un)verified). Others (reviews). Content ('symbol', profile video 30 secs).
 
 * Friendica
-* Diaspora
-* Reddit
-* Imgur
-* zooniverse
+
+**Zooniverse**: Attributes (name, display name, photo, header image); Activities (favourites, contributions); Content (comments, collections).
 
 **runkeeper**: Attributes (name, photo, location, motivation, gender, birthday, weight, body measurements, nutrition, certain health conditions); Activities (recent PRs, summaries, exercise tracked); Stats (miles, # activities, calories, # friends, active since)
 
@@ -78,7 +76,7 @@ The JSON object representing the user has the following properties:
 
 **CouchSurfing**: Web form
 
-* Facebook
+**Facebook**: Various web forms, some inline.
 
 **Quora**: Web form, built into profile view.
 
@@ -95,10 +93,23 @@ The JSON object representing the user has the following properties:
 **AirBnB**: Web form.
 
 * Friendica
-* Diaspora
-* Reddit
-* Imgur
-* zooniverse
+
+**Zooniverse**: Web form.
+
+API: The currently logged in User may edit their record by sending a partial representation of the resource including their changes. A User cannot edit linked resources:
+
+```
+PUT https://panoptes-staging.zooniverse.org/api/users/{id}
+
+Accept:application/vnd.api+json; version=1
+Content-Type:application/json
+
+{
+  "users": {
+    "credited_name": "Dr. Stuart Lynn, DDS"
+  }
+}
+```
 
 **runkeeper**: Web form. API:
 
@@ -131,7 +142,7 @@ Content-Type: application/vnd.com.runkeeper.Profile+json
 
 **CouchSurfing**: None.
 
-* Facebook
+**Facebook**:
 
 **Quora**: None.
 
@@ -148,10 +159,8 @@ Content-Type: application/vnd.com.runkeeper.Profile+json
 **AirBnB**: None.
 
 * Friendica
-* Diaspora
-* Reddit
-* Imgur
-* zooniverse
+
+**Zooniverse**: None.
 
 **runkeeper**: None.
 
@@ -179,7 +188,7 @@ Can grant write access and transfer admin between users for secondary blogs.
 
 **CouchSurfing**: Most things optional. Options: First or full name; restrict to log in members.
 
-* Facebook
+**Facebook**:
 
 **Quora**: Online presence on/off. Nothing for profile attributes. Can choose to ask/answer as Anonymous, but still logged in.
 
@@ -196,10 +205,8 @@ Can grant write access and transfer admin between users for secondary blogs.
 **AirBnB**: Some things are private by default. Social connections to share activity on fb only with other airbnb users, and suck some data through from fb. Hosts can require certain profile attributes are filled in.
 
 * Friendica
-* Diaspora
-* Reddit
-* Imgur
-* zooniverse
+
+**Zooniverse**: All optional.
 
 **runkeeper**: 'Sharing' Everyone/Friends/Just Me, profile things in groups of different levels of granularity (body measurements, weight, diabetes, nutrition, sleep, activities). Anything not in this list is an optional thing to fill in I guess, ie no way to say 'name' is friends only.
 
@@ -221,7 +228,7 @@ Can grant write access and transfer admin between users for secondary blogs.
 
 **CouchSurfing**: Friends - specify hosted/surft/traveled/never met, and closeness. Couch request/offer (but this doesn't create a persistant connection). References.
 
-* Facebook
+**Facebook**:
 
 **Quora**: follow a user (one way)
 
@@ -238,10 +245,8 @@ Can grant write access and transfer admin between users for secondary blogs.
 **AirBnB**: n/a (only references, nothing persistant)
 
 * Friendica
-* Diaspora
-* Reddit
-* Imgur
-* zooniverse
+
+**Zooniverse**:
 
 **runkeeper**: 2 way friendship (request-accept); used with access control as 4, and delivery/notifications.
 
@@ -263,7 +268,7 @@ Can grant write access and transfer admin between users for secondary blogs.
 
 **CouchSurfing**: n/a
 
-* Facebook
+**Facebook**:
 
 **Quora**: No export, no API
 
@@ -280,10 +285,8 @@ Can grant write access and transfer admin between users for secondary blogs.
 **AirBnB**: Nothing for profile. Export csv of transaction history, and various calendar syncing.
 
 * Friendica
-* Diaspora
-* Reddit
-* Imgur
-* zooniverse
+
+**Zooniverse**: n/a
 
 **runkeeper**: All data exportable, not standard format.
 
@@ -313,7 +316,7 @@ Secondary blogs can't 'initiate social features' (follow, like, ask, fan mail et
 6. Do Be Yourself: Misrepresenting yourself as someone else is prohibited. This includes representation as an agent, representative, employee, or affiliate of Couchsurfing.
 ```
 
-* Facebook
+**Facebook**:
 
 **Quora**:
 
@@ -384,10 +387,8 @@ you will not: ...
 ```
 
 * Friendica
-* Diaspora
-* Reddit
-* Imgur
-* zooniverse
+
+**Zooniverse**: Nothing profile related
 
 **runkeeper**:
 
@@ -425,7 +426,7 @@ TODO: *add diagrams*
 
 **CouchSurfing**: real people with info about them.
 
-* Facebook
+**Facebook**:
 
 **Quora**: real people with info about them; content-oriented where reputation is built on content votes, and trust from completing profile.
 
@@ -442,10 +443,16 @@ TODO: *add diagrams*
 **AirBnB**: real people.
 
 * Friendica
-* Diaspora
-* Reddit
-* Imgur
-* zooniverse
+
+**Zooniverse**: From http://www.arfon.org/how-the-zooniverse-works-the-domain-model
+
+```
+User
+
+People are core to the Zooniverse. When talking publically about the Zooniverse I almost always use the term 'citizen scientist' or 'volunteer' because it feels like an appropriate term for someone who donates their time to one of our projects. When writing code however, the shortest descriptive term that makes sense is usually selected so in our domain model the term we use is User.
+
+A User is exactly what you'd expect, it's a person, it has a bunch of information associated with it such as a username, an email address, information about which projects they've helped with and a host of other bits and bobs. Crucially though for us, a User is the same regardless of which project they're working - that is Users are pan-Zooniverse. Whether you're classiying galaxies over at Galaxy Zoo or identifying animals on Snapshot Serengeti we're associating your efforts with the same User record each time which turns out to be useful for a whole bunch of reasons (more later).
+```
 
 **runkeeper**: person with IRL attributes and activities logged.
 
@@ -463,7 +470,7 @@ TODO: *add diagrams*
 * Pump.io
 * YouTube
 * CouchSurfing
-* Facebook
+**Facebook**:
 * Quora
 **Okcupid**:
 * StackOverflow
@@ -472,9 +479,9 @@ TODO: *add diagrams*
 **ResearchGate**:
 * AirBnB
 * Friendica
-* Diaspora
-* Reddit
-* Imgur
+
+
+
 * zooniverse
 * runkeeper
 * github
@@ -491,7 +498,7 @@ TODO: *add diagrams*
 * Pump.io
 * YouTube
 * CouchSurfing
-* Facebook
+**Facebook**:
 * Quora
 **Okcupid**:
 * StackOverflow
@@ -500,9 +507,9 @@ TODO: *add diagrams*
 **ResearchGate**:
 * AirBnB
 * Friendica
-* Diaspora
-* Reddit
-* Imgur
+
+
+
 * zooniverse
 * runkeeper
 * github
