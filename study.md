@@ -32,7 +32,7 @@
 
 **AirBnB**: Attributes (name, location, ID type, school, languages, photo, about; private by default: email, phone, gender, date of birth). Stats: member since, # reviews, (un)verified). Others (reviews). Content ('symbol', profile video 30 secs).
 
-* Friendica
+**Friendica**: Attributes (photo, relationship status, sexual preference, display name, name, gender, birthday, homepage, birthday, address, location, public keywords, bio (free text), a bunch of other free text fields for interests etc). Content (status, photos, videos, personal notes). Activity (shares, likes, dislikes, stars, events, rsvps). Stats (member since). Others (messages).
 
 **Zooniverse**: Attributes (name, display name, photo, header image); Activities (favourites, contributions); Content (comments, collections).
 
@@ -92,7 +92,7 @@ The JSON object representing the user has the following properties:
 
 **AirBnB**: Web form.
 
-* Friendica
+**Friendica**: Web form (API for profile updates not implemented)
 
 **Zooniverse**: Web form.
 
@@ -158,7 +158,7 @@ Content-Type: application/vnd.com.runkeeper.Profile+json
 
 **AirBnB**: None.
 
-* Friendica
+**Friendica**: Profile pic updates.
 
 **Zooniverse**: None.
 
@@ -204,7 +204,7 @@ Can grant write access and transfer admin between users for secondary blogs.
 
 **AirBnB**: Some things are private by default. Social connections to share activity on fb only with other airbnb users, and suck some data through from fb. Hosts can require certain profile attributes are filled in.
 
-* Friendica
+**Friendica**: Tags have separate fields for public/private. Friends/contacts visibility on/off. Everything optional. "This is your public profile. It may be visible to anybody using the internet."
 
 **Zooniverse**: All optional.
 
@@ -244,9 +244,9 @@ Can grant write access and transfer admin between users for secondary blogs.
 
 **AirBnB**: n/a (only references, nothing persistant)
 
-* Friendica
+**Friendica**: Follow request. Reciever gets to accept as one way (fan/admirer; they read you) or two way (friend; you also see updates from them).
 
-**Zooniverse**:
+**Zooniverse**: n/a
 
 **runkeeper**: 2 way friendship (request-accept); used with access control as 4, and delivery/notifications.
 
@@ -284,7 +284,16 @@ Can grant write access and transfer admin between users for secondary blogs.
 
 **AirBnB**: Nothing for profile. Export csv of transaction history, and various calendar syncing.
 
-* Friendica
+**Friendica**: ActivityStreams. Various levels of compatability with APIs of GNU Social, pump.io, Twitter, diaspora. Profile and connections portable to another server. You can also use your friendica identity via webfinger to identify with a bunch of other things like remotestorage, owncloud.
+
+```
+* Friendica uses DFRN as message protocol.
+* The messages uses ActivityStreams.
+* Webfinger is used for the discovery of users
+* Salmon is used as a message exchange protocol for replies and mentions.
+* Portable Contacts is used for friends lists.
+* pubsubhubbub is used for OStatus.
+```
 
 **Zooniverse**: n/a
 
@@ -386,7 +395,7 @@ you will not: ...
 * impersonate any person or entity, or falsify or otherwise misrepresent yourself or your affiliation with any person or entity;
 ```
 
-* Friendica
+**Friendica**: ToS per server presumably.
 
 **Zooniverse**: Nothing profile related
 
@@ -442,7 +451,7 @@ TODO: *add diagrams*
 
 **AirBnB**: real people.
 
-* Friendica
+**Friendica**: Personas with profiles. [This](https://github.com/friendica/friendica/blob/master/doc/Profiles.md) describes how alternative profiles work, but I can't find these settings in friendica.eu right now (I have seen them before for sure). You can create versions of yourself with different attributes, and assign them so certain people see certain profiles when the look at you. Ie. profiles as views on a person. Also your profile can be a different 'page type' which automates connections settings in different ways, eg. for celebrities.
 
 **Zooniverse**: From http://www.arfon.org/how-the-zooniverse-works-the-domain-model
 
