@@ -78,6 +78,17 @@ The JSON object representing the user has the following properties:
 
 **Facebook**: Various web forms, some inline.
 
+```
+You can update a User by making a POST request to /{user_id}.
+
+id
+firstname
+lastname
+label_cohort
+```
+
+Also various endpoints for types of content that might appear on profiles.
+
 **Quora**: Web form, built into profile view.
 
 **Okcupid**: Web forms, some inline, some separate.
@@ -142,7 +153,7 @@ Content-Type: application/vnd.com.runkeeper.Profile+json
 
 **CouchSurfing**: None.
 
-**Facebook**:
+**Facebook**: Some (most) attributes in timeline; particularly profile pics, cover photos, relationship status (except when option not to publish is chosen, per thing). When you update attributes it asks if you want them to be a story. Some things as life events.
 
 **Quora**: None.
 
@@ -435,7 +446,7 @@ TODO: *add diagrams*
 
 **CouchSurfing**: real people with info about them.
 
-**Facebook**:
+**Facebook**: "When something has a profile, Graph API returns the fields for that object. (User, Page, Group, Event, Application)"
 
 **Quora**: real people with info about them; content-oriented where reputation is built on content votes, and trust from completing profile.
 
