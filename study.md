@@ -199,7 +199,7 @@ Can grant write access and transfer admin between users for secondary blogs.
 
 **CouchSurfing**: Most things optional. Options: First or full name; restrict to log in members.
 
-**Facebook**:
+**Facebook**: Can restrict access to individual attributes on profile. Also per-post. Can set defaults to include or exclude people/groups/public/networks. Super complex. // HERENOW - screenshots
 
 **Quora**: Online presence on/off. Nothing for profile attributes. Can choose to ask/answer as Anonymous, but still logged in.
 
