@@ -199,7 +199,7 @@ Can grant write access and transfer admin between users for secondary blogs.
 
 **CouchSurfing**: Most things optional. Options: First or full name; restrict to log in members.
 
-**Facebook**: Can restrict access to individual attributes on profile. Also per-post. Can set defaults to include or exclude people/groups/public/networks. Super complex. // HERENOW - screenshots
+**Facebook**: Can restrict access to individual attributes on profile. Also per-post. Can set defaults to include or exclude people/groups/public/networks. Super complex. Can restrict findability of profile. Can set commeting access on public posts and profile info separately (ie. read and write acl are separate).
 
 **Quora**: Online presence on/off. Nothing for profile attributes. Can choose to ask/answer as Anonymous, but still logged in.
 
@@ -239,7 +239,7 @@ Can grant write access and transfer admin between users for secondary blogs.
 
 **CouchSurfing**: Friends - specify hosted/surft/traveled/never met, and closeness. Couch request/offer (but this doesn't create a persistant connection). References.
 
-**Facebook**:
+**Facebook**: Friends - mutual, accept/reject request. You can choose to let anyone 'follow' your public posts (or not). You can follow pages. Following is one way.
 
 **Quora**: follow a user (one way)
 
@@ -279,7 +279,7 @@ Can grant write access and transfer admin between users for secondary blogs.
 
 **CouchSurfing**: n/a
 
-**Facebook**:
+**Facebook**: You can download all of your data. https://www.facebook.com/help/405183566203254 "This includes a lot of the same information available to you in your account and activity log, including your Timeline info, posts you have shared, messages, photos and more. Additionally, it includes information that is not available simply by logging into your account, like the ads you have clicked on, data like the IP addresses that are logged when you log into or out of Facebook, and more."
 
 **Quora**: No export, no API
 
@@ -337,6 +337,21 @@ Secondary blogs can't 'initiate social features' (follow, like, ask, fan mail et
 ```
 
 **Facebook**:
+
+```
+Registration and Account Security
+
+Facebook users provide their real names and information, and we need your help to keep it that way. Here are some commitments you make to us relating to registering and maintaining the security of your account:
+
+* You will not provide any false personal information on Facebook, or create an account for anyone other than yourself without permission.
+* You will not create more than one personal account.
+* If we disable your account, you will not create another one without our permission.
+...
+* You will keep your contact information accurate and up-to-date.
+* You will not share your password (or in the case of developers, your secret key), let anyone else access your account, or do anything else that might jeopardize the security of your account.
+* You will not transfer your account (including any Page or application you administer) to anyone without first getting our written permission.
+* If you select a username or similar identifier for your account or Page, we reserve the right to remove or reclaim it if we believe it is appropriate (such as when a trademark owner complains about a username that does not closely **relate to a user's actual name**).
+```
 
 **Quora**:
 
